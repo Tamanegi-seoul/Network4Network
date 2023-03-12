@@ -50,7 +50,7 @@
 Reference List
 - [네트워크 개론](https://www.hanbit.co.kr/store/books/look.php?p_code=B7721595096)
 
-- [쉽게 배우는 데이터 통신과 컴퓨터 네트워크] (https://www.hanbit.co.kr/store/books/look.php?p_code=B3980824801)
+- [쉽게 배우는 데이터 통신과 컴퓨터 네트워크](https://www.hanbit.co.kr/store/books/look.php?p_code=B3980824801)
 
 - [리얼월드 HTTP](https://www.hanbit.co.kr/store/books/look.php?p_code=B7009240426)
 
