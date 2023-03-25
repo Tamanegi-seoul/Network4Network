@@ -34,7 +34,7 @@
 
 ##### Layer 3. 
 ### Network 네트워크 계층
-<p align="center"><a href='https://ifh.cc/v-y4KZbs' target='_blank'><img src='https://ifh.cc/g/y4KZbs.png' border='0'></a></p>
+<a href='https://ifh.cc/v-y4KZbs' target='_blank'><img src='https://ifh.cc/g/y4KZbs.png' border='0'></a>
 
 - 기기에서 데이터그램이 가는 경로를 설정해주는 역할을 한다. 
 - 목적지 네트워크 주소(IP)를 정하고, 그에 따른 경로(Route)를 선택하고, 경로에 따라 패킷을 전달해주는 역할. 
