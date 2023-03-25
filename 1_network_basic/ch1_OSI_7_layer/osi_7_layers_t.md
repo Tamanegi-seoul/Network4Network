@@ -22,7 +22,7 @@
 
 ##### Layer 2. 
 ### Data Link 데이터 링크 계층
-<a href='https://ifh.cc/v-zKoKPY' target='_blank'><img src='https://ifh.cc/g/zKoKPY.png' border='0'></a><
+<a href='https://ifh.cc/v-zKoKPY' target='_blank'><img src='https://ifh.cc/g/zKoKPY.png' border='0'></a>
 
 - 네트워크 기기들 사이의 데이터를 전송하는 역할. 
 - 시스템간의 오류없는 데이터 전송을 위해 패킷(Packet)을 프레임(Frame)으로 구성하여 물리계층으로 전송.
