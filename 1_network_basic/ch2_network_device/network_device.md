@@ -48,18 +48,23 @@ NIC는 컴퓨터와 네트워크 사이의 데이터를 translate하고, 컴퓨�
 
 ## 2. 데이터 링크
 
+<img src="/assets/images/ch2/bridge.png">
+
 ### Bridge 브릿지
-`Bridge`는 MAC 주소를 기반으로 네트워크의 패킷을 필터링한다. Bridge Table을 통해서 
+`Bridge`는 여러 네트워크의 Segment의 연결을 담당하며, MAC 주소를 기반으로 네트워크의 패킷을 필터링한다. 네트워크를 연결한다는 점에서 리피터 또는 허브와 유사하지만, 특정 네트워크로부터 수신하는 트래픽을 관리할 수 있다.<br>
+
 
 
 
 <img src="/assets/images/ch2/switch.png">
 
-### L2 Switch
-`Switch`는 물리적 포트에 연결된 기기에서 전송된 패킷을 수신하고, 이를 대상 기기로 송신한다. 이 과정에서, 스위치에 연결된 기기들의 각 IP와 MAC주소를 기반으로 한다. 즉, 한 기기가 다른 기기로 패킷을 전송하면 스위치를 통하게 되며, 스위치는 패킷의 헤더를 읽어서 목적지 주소(MAC주소)를 통해 적절한 포트를 통해 패킷을 전달한다.<br>
-허브는 연결된 모든 기기에게 전파하지만, 스위치는 특정 기기에게만 전달하기에 훨씬 빠르게 트래픽을 처리할 수 있다.<br>
+### Switch
+`Switch`는 물리적 포트에 연결된 기기에서 전송된 패킷을 수신하고, 이를 특정 대상 기기로 송신한다. 이 과정에서, 스위치에 연결된 기기들의 각 IP와 MAC주소를 기반으로 한다. 즉, 한 기기가 다른 기기로 패킷을 전송하면 스위치를 통하게 되며, 스위치는 패킷의 헤더를 읽어서 목적지 주소(MAC주소)를 통해 적절한 포트를 통해 패킷을 전달한다.<br>
+허브는 연결된 모든 기기에게 전파하지만, 스위치는 특정 기기에게만 전달하기에 훨씬 빠르게 트래픽을 처리할 수 있다.<br><br>
+
+<img src="/assets/images/ch2/switch_table.png">
 스위치에 연결된 기기에 대해 MAC 주소 테이블을 지니며, 수신한 패킷이 테이블에 존재하지 않는다면 모든 기기에게 전파한다. 해당하는 MAC주소를 지닌 기기가 존재하면 해당 기기의 MAC주소를 테이블에 등록하고, 해당되는 기기가 없으면 해당 패킷을 파기한다.<br>
-대부분의 스위치는 데이터링크 계층에서 운용되지만, 경우에 따라 3계층(네트워크)에서 사용될 수 있다.<br>
+대부분의 스위치는 데이터링크 계층에서 운용되지만, 경우에 따라 3계층(네트워크) 등 타 계층에서 사용될 수 있다.(L1~L7스위치)<br>
 
 
 
@@ -72,6 +77,19 @@ NIC는 컴퓨터와 네트워크 사이의 데이터를 translate하고, 컴퓨�
 
 
 ## 3. 네트워크 
+
+
+<img src="/assets/images/ch2/AP.png">
+
+### AP (Access Point) / WAP(Wireless Access Point)
+`Access Point`는 무선 기기가 유선 네트워크에 연결할 수 있도록 한다. 즉, 유선랜의 유선 신호를 무선으로 변경해주며, WAP이라고 불리기도 한다. 최근에는 AP만 사용하는 경우가 거의 없으며, 대중적인 공유기에 해당 기능을 필수로 포함하고 있다.<br>
+NAT기능을 제공하지 않으며, DHCP서버에 IP를 할당해줘야만 한다.<br>
+
+**DHCP(Dynamic Host Configuration Protocol)**: 네트워크에 연결된 기기에게 IP주소를 자동으로 할당한다.<br>
+따라서, `외부 인터넷 - 모뎀 - AP` 로 구성하게 되면 AP에 연결된 단일 기기만 인터넷 통신이 가능하며, <br>
+`외부 인터넷 - 모뎀 - 공유기 - AP` 로 구성되어야 여러 기기가 인터넷 사용이 가능해진다.<br><br>
+
+
 
 <img src="/assets/images/ch2/switch.png">
 
@@ -89,87 +107,6 @@ NAT Forwarding Table에 다수의 private IP에 대한 주소와 포트로 구�
 **VPN** 가상사설망으로, 패킷을 암호화하여 VPN 서버에 보내서 타 네트워크 망에 접속하도록 하는 것.<br>
 **QoS** 네트워크 상의 일정한 지연속도와 데이터 손실 등을 보장하는 것.<br><br>
 
-<img src="/assets/images/ch2/AP.png">
-
-### AP (Access Point) / WAP(Wireless Access Point)
-`Access Point`는 무선 기기가 유선 네트워크에 연결할 수 있도록 한다. 즉, 유선랜의 유선 신호를 무선으로 변경해주며, WAP이라고 불리기도 한다. <br>
-NAT기능을 제공하지 않으며, DHCP서버에 IP를 할당해줘야만 한다.<br>
-
-**DHCP(Dynamic Host Configuration Protocol)**: 네트워크에 연결된 기기에게 IP주소를 자동으로 할당한다.<br><br>
-
-
-
-<br>
-
----
-
-<br>
-
-## 4. 전송 계층
-
-### Firewall 방화벽
-
-### Load Balancer 로드밸런서
-
-
-<br>
-
----
-
-<br>
-
-## 5. 세션 계층
-
-세션 계층에서는 장비나 인프라의 영향을 많이 받지 않는다고 한다. 세션은 소켓(주소:포트)과 방화벽의 오픈 포트(SOCKS)와 연관이 깊다.
-
-> SOCKS: 
-
-`SOCKS(Socket Secure)`: 클라이언트와 서버 사이의 프록시 서버를 통해 패킷을 교환하는 인터넷 프로토콜로, HTTP, FTP, UDP, SMTP까지 지원한다.
-
-`HTTP proxy`: HTTP 프록시 서버는 서버와 클라이언트 사이의 HTTP/HTTPs만을 제어한다.
-
-<br>
-
----
-
-<br>
-
-## 브리지
-
-## 게이트웨이
-
-
-
-
-<br>
-
----
-
-<br>
-
-## 6. 표현 계층
-
-
-### Proxy Server
-
-### SSL Accelerator
-
-
-<br>
-
----
-
-<br>
-
-## 7. 응용 계층
-
-### Application Gateway
-
-
-### Content Filters
-
-
-
 
 
 참조: 
@@ -177,3 +114,6 @@ NAT기능을 제공하지 않으며, DHCP서버에 IP를 할당해줘야만 한�
 '스위치의 구조', https://blog.naver.com/reversing_joa/222594161420<br>
 '허브, 스위치, 라우터, 공유기', https://velog.io/@ckstn0777/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%97%88%EB%B8%8C-%EC%8A%A4%EC%9C%84%EC%B9%98-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EA%B3%B5%EC%9C%A0%EA%B8%B0<br>
 '허브, 스위치, 라우터, 공유기 이게 다 뭐야', https://shine72.tistory.com/45<br>
+'How does a switch learn a switch table?', https://networkengineering.stackexchange.com/questions/13012/how-does-a-switch-learn-a-switch-table<br>
+'Switch Learning and Forwarding', https://telconotes.wordpress.com/2013/03/09/how-a-switch-works/<br>
+'네트워크 개론', 진혜진 저.
