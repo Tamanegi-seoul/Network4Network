@@ -10,7 +10,7 @@
 
 ##### Layer 1. 
 ### Physical 물리적계층
-<p align="center"><a href='https://ifh.cc/v-7TwlHb' target='_blank'><img src='https://ifh.cc/g/7TwlHb.png' border='0'></a></P>
+<a href='https://ifh.cc/v-7TwlHb' target='_blank'><img src='https://ifh.cc/g/7TwlHb.png' border='0'></a>
 
 - 네트워크 데이터가 전송되는 물리적인 매체.
 - 데이터는 0과 1의 비트열, 즉 On, Off의 전기적 신호상태로 이루어져 있다. 
@@ -22,7 +22,7 @@
 
 ##### Layer 2. 
 ### Data Link 데이터 링크 계층
-<p align="center"><a href='https://ifh.cc/v-zKoKPY' target='_blank'><img src='https://ifh.cc/g/zKoKPY.png' border='0'></a></p>
+<a href='https://ifh.cc/v-zKoKPY' target='_blank'><img src='https://ifh.cc/g/zKoKPY.png' border='0'></a><
 
 - 네트워크 기기들 사이의 데이터를 전송하는 역할. 
 - 시스템간의 오류없는 데이터 전송을 위해 패킷(Packet)을 프레임(Frame)으로 구성하여 물리계층으로 전송.
