@@ -44,6 +44,7 @@
 
 
 <br>
+
 ##### Layer 4. 
 ### Transport 전송 계층
 
@@ -83,3 +84,7 @@
 - 사용자와 직접 접하는 유일한 계층 
   - 사용자로부터 정보를 입력받아 하위 계층으로 전달하고, 하위 계층에서 전송한 데이터를 사용자에게 전달. 
 - 대표적인 프로토콜 : HTTP, DNS 등
+
+출처
+> [우아한테크코스 테코톡 '히히의 OSI 7 Layer'](https://www.youtube.com/watch?v=1pfTxp25MA8).
+> https://backendcode.tistory.com/167
