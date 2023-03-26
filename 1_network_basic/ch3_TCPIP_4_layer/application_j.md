@@ -79,6 +79,8 @@ OSI 7계층의 최상위 응용, 표현, 세션 계층은 인터넷 모델(TCP/I
 
 ### How these works? How we can utilize it on Application?
 
+<img src="/assets/images/ch3/mail_protocol.png">
+
 다음은 IMAP 기반으로 이메일의 inbox에 있는 모든 메일을 가져오며, 각 메일의 제목과 발송인을 출력하는 예시 코드이다.<br>
 
 ```Python
@@ -131,7 +133,7 @@ app  appspec.yml  install
 
 <br>
 
-- 참조
+- 참조 <br>
 'SSH Secure Shell', 정보통신기술용어해설, http://www.ktword.co.kr/test/view/view.php?m_temp1=2524<br>
 'SMTP POP3 IMAP이란?', https://sambalim.tistory.com/60<br>
 'SSH 명칭부터 접속까지 한번에 이해하기', https://library.gabia.com/contents/infrahosting/9002/<br>

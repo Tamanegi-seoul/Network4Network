@@ -1,5 +1,10 @@
 # 웹/인터넷의 표준은 누가, 언제, 어디서 정하나?
 
+<img src="/assets/images/ch3/standard.png">
+
+> `standard` used or accepted as normal or average...<br>
+`protocol` system of rules that define how data is exchanged over computers ...
+
 
 ## What is W3C?
 `World Wide Web Consortium(W3C, 웹 표준 국제 컨소시엄)`은 팀 버너스 리를 중심으로 웹의 표준을 개발하고 장려하는 조직이다. <br>
@@ -20,14 +25,11 @@ CSS, DOM, HTML, XML 등과 같은 웹과 관련된 기술의 표준을 선언했
 
 이에 대한 실마리는 RFC를 통해 알 수 있다. `RFC2616`<br>
 
->  3.2.2 http URL
-
+>  3.2.2 http URL<br>
    The "http" scheme is used to locate network resources via the HTTP
    protocol. This section defines the scheme-specific syntax and
-   semantics for http URLs.
-
-   http_URL = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
-
+   semantics for http URLs.<br><br>
+   http_URL = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]<br><br>
    If the port is empty or not given, port 80 is assumed. The semantics
    are that the identified resource is located at the server listening
    for TCP connections on that port of that host, and the Request-URI
@@ -38,13 +40,13 @@ CSS, DOM, HTML, XML 등과 같은 웹과 관련된 기술의 표준을 선언했
    receives a host name which is not a fully qualified domain name, it
    MAY add its domain to the host name it received. If a proxy receives
    a fully qualified domain name, the proxy MUST NOT change the host
-   name.
+   name.<br>
 
 처음엔 HTTP의 포트에 대한 약속이 없었지만, RFC 1060에서 79,81포트는 명시하였지만 80포트는 비워져있었다. 이후 W3C에서 HTTP 0.9를 소개하면서 HTTP를 위해 80포트를 기본적으로 사용하자고 언급했다. RFC 1340에서 80포트가 World Wide Web HTTP로 공식 지정되었다.<br><br>
 
 이처럼, 과거에는 정해진 바가 없는 카오스의 환경에서 여러 기구와 단체의 노력으로 규범(standard, protocol)으로 굳혀져 현대의 기술들이 정의되었다. <br>
 
-- 출처
+- 출처<br>
 'http의 기본 포트가 80, https의 기본 포트가 443인 이유는 무엇일까?', https://johngrib.github.io/wiki/why-http-80-https-443/<br>
 'ECMA internatioanl', https://ko.wikipedia.org/wiki/Ecma_%EC%9D%B8%ED%84%B0%EB%82%B4%EC%85%94%EB%84%90<br>
 
