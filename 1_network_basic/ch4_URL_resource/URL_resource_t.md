@@ -3,7 +3,7 @@
 
 <b>URI</b> (Uniform Resource Identifier)는 하나의 리소스를 가리키는 문자열입니다. 가장 흔한 URI는 URL로, 웹 상에서의 위치로 리소스를 식별합니다.
 
-### URL이란?
+## URL이란?
 - 인터넷의 리소스를 가리키는 표준
 - 리소스뿐만 아니라 인터넷에서 리소스에 도달하는 방법을 지정하는 URI유형
 
@@ -32,9 +32,9 @@
   - URL에서 ?다음에 오는 내용
   - key=value 형식으로 구성되어 있고, 여러개를 사용할 때 '&'을 붙여 사용한다. 
 
-#### Query String에서 문자열을 가지고 오는 방법 
+### Query String에서 문자열을 가지고 오는 방법 
 
-<b>방법 1. URL </b>
+> <b>방법 1. URL </b>
 가장 기본적인 방법으로 new 키워드를 사용하여 URL객체 생성 후 searchParams 프로퍼티로 QueryString만 가져옵니다. 그 다음 get()메서드로 원하는 값을 가져옵니다. 
 ```javascript
   
@@ -49,7 +49,7 @@ console.log(queryString.get('oquery')); // 맛집
 
 ```
 
-<b>방법 2. URLSearchParams </b>
+> <b>방법 2. URLSearchParams </b>
 
 new 키워드를 사용하여 URLSearchParams 객체 생성 후 get() 메서드로 원하는 값을 가져 옵니다. 
 
