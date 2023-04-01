@@ -72,6 +72,8 @@ for (const key of urlSearchParamsObject.keys()) {
   console.log(urlSearchParamsObject.get(key));
 }
 ```
+
+
 [실행결과]
 <img src="https://ifh.cc/g/nGKDPN.png">
 
