@@ -31,10 +31,12 @@
   - 웹 개발에서 데이터를 요청하는 방식 중 대표적인 것이 GET방식과 POST방식인데, 주로 GET방식으로 데이터를 요청할 때 쓰이는 방법.
   - URL에서 ?다음에 오는 내용
   - key=value 형식으로 구성되어 있고, 여러개를 사용할 때 '&'을 붙여 사용한다. 
+<br>
+<br>
 
 ### Query String에서 문자열을 가지고 오는 방법 
 
-> <b>방법 1. URL </b>
+ <b>방법 1. URL </b>
 가장 기본적인 방법으로 new 키워드를 사용하여 URL객체 생성 후 searchParams 프로퍼티로 QueryString만 가져옵니다. 그 다음 get()메서드로 원하는 값을 가져옵니다. 
 ```javascript
   
@@ -48,8 +50,8 @@ console.log(queryString.get('query'));  // 맛집
 console.log(queryString.get('oquery')); // 맛집
 
 ```
-
-> <b>방법 2. URLSearchParams </b>
+<br>
+ <b>방법 2. URLSearchParams </b>
 
 new 키워드를 사용하여 URLSearchParams 객체 생성 후 get() 메서드로 원하는 값을 가져 옵니다. 
 
@@ -62,6 +64,8 @@ console.log(urlSearchParamsObject.get('query'));  // 맛집
 console.log(urlSearchParamsObject.get('oquery')); // 맛집
 
 ```
+<br>
+
 URL이 너무 길다면, Query String만 new URLSearchParams()에 전달할 수 있습니다. 
 또한, URL에 존재하는 모든 Query String을 가져오고 싶다면, URLSearchParams에서 제공하는 keys() 메서드를 사용하여 모든 키를 추출한 뒤 반복문으로 해당 키에 해당하는 값을 가져올 수 있습니다. 
 
