@@ -63,104 +63,73 @@
 
 ---
 
-- ch01. 네트워크 레이어
-    - 컴퓨터 네트워크란?
-    - 프로토콜과 프로토콜 스택
-    - OSI 7 Layer
-    - TCP/IP
 
 - ch02. HTTP, DNS
-    - http, http2
-    - https
+    - http
+        - 메세지 구조(1.1 기준) - 경훈
+        - 버전별 차이 0.9, 1.0, 1.1, 2.0, 3.0 - 세영
+    
     - dns
+        - DNS서버의 기본 동작 - 태이
+        - 캐싱을 통한 DNS 성능 향상 (ISP, 브라우저, OS단 캐싱 등) - 준우
     
 - ch03. UDP와 TCP 
-    - 전송 후 대기 프로토콜
-    - 파이프라인 프로토콜
     - UDP
         - UDP 체크섬
     - TCP
-        - 3 way handshake
-        - 4 way handshake
-    - Go Back N이란?
+        - 패킷 교환 방식 3,4 way handshake
+        - TCP 커넥션
+        - 지연 시간 및 패킷 손실
+    - Go Back N이란? (전송 후 대기 프로토콜)
+    - 파이프라인 프로토콜
     - Selective repeat
     - Congestion Control
     - Flow Control
 
 - ch04. IP address
     - subnet, subnet mask
-    - DHCP
+    - gateway, DHCP
 
 
 - ch05. 쿠키, 세션, 토큰
     - 쿠키
     - 세션
-    - 토큰, J
+    - 토큰, JWT
+    - 인증, 인가(개념)
+        - 기본인증, 보안결함
+        - 다이제스트 인증
     
 - ch06. 네트워크 보안
     - CORS
-    - X
+    - CSRF
+    - XSS
     - DDOS
     - SQL Injection
-- ch07. 실무 네트워크 지식
-    -  SOAP, REST API
-    -  URL, URI, URN
-    -  웹 캐시
-    -  프록시 서버
 
----
-
-## HTTP Intro  - 1.1 기준
-
-- HTTP 메세지
-    - 버전별 차이
-    - 메세지 구조, HTTP 메소드, 상태코드, 헤더
-
-- DNS → 널널한개발자 참조
-    - DNS 서버의 기본 동작
-    - 캐싱을 통한 DNS 성능 향상
-
-- 커넥션 관리 - How TCP works?
-    - TCP 커넥션
-    - TCP 연결 원리(?) 동작과정 (3-4way handshaking)
-        - 패킷 교환 방식
-    - 지연 시간 및 패킷 손실
-    - 병렬,지속,파이프라인 커넥션
-
-- 웹 서버 - How Web Server works?
-    - 웹 서버, WAS
-    - 역할과 동작과정
-        - 커넥션 수락, 메시지 수신, 요청처리, 리소스 매핑/접근, 응답 만들기, 응답 보내기의 과정
-- 프록시
-    - 왜, 어디서 프록시를 쓰나?
-        - 프록시 요청 특징
-        - 메시지 추적
-        - 프록시 인증
-
-- 캐시 - 캐싱과 조건부 요청
-    - 캐시 기본 동작
-    - 검증 헤더와 조건부 요청
-    - 캐시와 조건부 요청 헤더
-    - 프록시 캐시
-   
-   - 캐시 무효화
-
-- 인증, 식별 인가 보안
-- 클라이언트 식별
-    - HTTP 헤더, 쿠키, 세션 등
-- 인증
-    - 기본인증, 보안 결함
-    - 다이제스트 인증
-- 인가
-- CORS
-- 보안 HTTP
-- 전송 계층 보안(TLS)
-    - OPTIONS, TRACE, CONNECT 메소드 추가
-- HTTPS
+- ch07. HTTPS
+    - TLS/SSL (OPTIONS, TRACE, CONNECT 메소드 추가)
     - 대칭키, 공개키 방식
     - 디지털 서명과 인증서
-    - TCP/IP 통신에서 추가되는 과정
-    - +a 세부사항
+    - TCP/IP통신에 추가되는 과정
+
+
+- ch08. 실무 네트워크 지식
+    -  SOAP, REST API (추가 API 패러다임)
+    - 웹 서버 - How Web Server works?
+        - 웹 서버, WAS의 역활과 동작과정
+        - 커넥션 수락, 메시지 수신, 요청처리, 리소스 매핑/접근, 응답 만들기, 응답 보내기의 과정
+
+-  ch09. 웹 캐시
+    - 캐시 기본 동작
+    - 검증 헤더와 조건부 요청
+    - 프록시 캐시
+    - 캐시 무효화
+
+-  ch10. 프록시 서버
+    - 프록시를 쓰는 이유?
+        - 프록시 요청 특징
+    - 메시지 추적
+    - 프록시 인증
 
 ---
 
