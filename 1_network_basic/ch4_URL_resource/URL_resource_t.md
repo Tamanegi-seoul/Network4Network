@@ -1,7 +1,7 @@
 # URL과 리소스 - 태이
 <img src="https://ifh.cc/g/6rlhdj.jpg" alt="uri이미지">
 
-<b>URI</b> (Uniform Resource Identifier)는 하나의 리소스를 가리키는 문자열입니다. 가장 흔한 URI는 URL로, 웹 상에서의 위치로 리소스를 식별합니다.
+<b>URI</b> (Uniform Resource Identifier)특정 리소스를 식별하는 통합 자원 식별자(Uniform Resource Identifier)를 의미한다. 하나의 리소스를 가리키는 문자열입니다. 가장 흔한 URI는 URL로, 웹 상에서의 위치로 리소스를 식별합니다.
 
 ## URL이란?
 - 인터넷의 리소스를 가리키는 표준
