@@ -63,6 +63,53 @@
 
 ---
 
+- ch01. 네트워크 레이어
+    - 컴퓨터 네트워크란?
+    - 프로토콜과 프로토콜 스택
+    - OSI 7 Layer
+    - TCP/IP
+
+- ch02. HTTP, DNS
+    - http, http2
+    - https
+    - dns
+    
+- ch03. UDP와 TCP 
+    - 전송 후 대기 프로토콜
+    - 파이프라인 프로토콜
+    - UDP
+        - UDP 체크섬
+    - TCP
+        - 3 way handshake
+        - 4 way handshake
+    - Go Back N이란?
+    - Selective repeat
+    - Congestion Control
+    - Flow Control
+
+- ch04. IP address
+    - subnet, subnet mask
+    - DHCP
+
+
+- ch05. 쿠키, 세션, 토큰
+    - 쿠키
+    - 세션
+    - 토큰, J
+    
+- ch06. 네트워크 보안
+    - CORS
+    - X
+    - DDOS
+    - SQL Injection
+- ch07. 실무 네트워크 지식
+    -  SOAP, REST API
+    -  URL, URI, URN
+    -  웹 캐시
+    -  프록시 서버
+
+---
+
 ## HTTP Intro  - 1.1 기준
 
 - HTTP 메세지
@@ -95,7 +142,8 @@
     - 검증 헤더와 조건부 요청
     - 캐시와 조건부 요청 헤더
     - 프록시 캐시
-    - 캐시 무효화
+   
+   - 캐시 무효화
 
 - 인증, 식별 인가 보안
 - 클라이언트 식별
