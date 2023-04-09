@@ -2,7 +2,7 @@
 - 호스트의 도메인네임 (www.example.com)을 네트워크주소 (192.168.10)로 변환하거나, 그 반대의 역할을 수행하는 시스템이다. 
 - 이 DNS를 운영하는 서버를 `네임서버`라고 한다. 
 - DNS 서버는 사용자가 도메인 이름을 브라우저에 입력하면, 사용자를 어떤 서버에 연결할 것인지 제어한다. 이러한 요청을 쿼리라고 한다. 
-<p><img style="width:300px" src="https://ifh.cc/g/gs3dNh.jpg" alt="img"></p>
+<p align="center"><img style="width:600px" src="https://ifh.cc/g/gs3dNh.jpg" alt="img"></p>
 
 1. 도메인 주소 naver.com을 브라우저에 입력하면, 도메인 주소들을 가지고 있는 <b>네임서버(DNS 서버)</b>에 접속한다.
 2. 네임서버에 접속한 도메인 (naver.com)과 연결된 <b>IP정보(223.130.192.200)를 확인</b>하고, IP를 사용자 PC에 전달한다. 
