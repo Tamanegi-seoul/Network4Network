@@ -2,7 +2,7 @@
 - 호스트의 도메인네임 (www.example.com)을 네트워크주소 (192.168.10)로 변환하거나, 그 반대의 역할을 수행하는 시스템이다. 
 - 이 DNS를 운영하는 서버를 `네임서버`라고 한다. 
 - DNS 서버는 사용자가 도메인 이름을 브라우저에 입력하면, 사용자를 어떤 서버에 연결할 것인지 제어한다. 이러한 요청을 쿼리라고 한다. 
-<p><img src="https://ifh.cc/g/rL5cod.png" alt="img"></p>
+<p><img src="https://ifh.cc/g/gs3dNh.jpg" alt="img"></p>
 
 1. 도메인 주소 naver.com을 브라우저에 입력하면, 도메인 주소들을 가지고 있는 <b>네임서버(DNS 서버)</b>에 접속한다.
 2. 네임서버에 접속한 도메인 (naver.com)과 연결된 <b>IP정보(223.130.192.200)를 확인</b>하고, IP를 사용자 PC에 전달한다. 
@@ -54,7 +54,7 @@
 naver 서버라도 그 안에서 네이버 홈, 메일, 블로그, 카페 등 여러 서비스가 있다. 이 서비스들을 구분하는 도메인 네임이라고 보면 된다.
 
 ### DNS 문자열 구조
-<p><img src="https://ifh.cc/g/1qztfF.png"></p>
+<p><img src="https://ifh.cc/g/L1GQNP.png"></p>
 모든 Computer들은 Root domain DNS server의 IP 주소는 알고있다.
 
 그리고 Root domain을 담당하는 DNS 서버는 TLD(Top-level domain)을 담당하는 서버 목록과 IP를,
