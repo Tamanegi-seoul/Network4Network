@@ -63,8 +63,9 @@
 
 ---
 
+## Network Advanced
 
-- ch02. HTTP, DNS
+- ch01. HTTP, DNS
     - http
         - 메세지 구조(1.1 기준) - 경훈
         - 버전별 차이 0.9, 1.0, 1.1, 2.0, 3.0 - 세영
@@ -73,7 +74,7 @@
         - DNS서버의 기본 동작 - 태이
         - 캐싱을 통한 DNS 성능 향상 (ISP, 브라우저, OS단 캐싱 등) - 준우
     
-- ch03. UDP와 TCP 
+- ch02. UDP와 TCP 
     - UDP
         - UDP 체크섬
     - TCP
@@ -86,12 +87,12 @@
     - Congestion Control
     - Flow Control
 
-- ch04. IP address
+- ch03. IP address
     - subnet, subnet mask
     - gateway, DHCP
 
 
-- ch05. 쿠키, 세션, 토큰
+- ch04. 쿠키, 세션, 토큰
     - 쿠키
     - 세션
     - 토큰, JWT
@@ -99,33 +100,33 @@
         - 기본인증, 보안결함
         - 다이제스트 인증
     
-- ch06. 네트워크 보안
+- ch05. 네트워크 보안
     - CORS
     - CSRF
     - XSS
     - DDOS
     - SQL Injection
 
-- ch07. HTTPS
+- ch06. HTTPS
     - TLS/SSL (OPTIONS, TRACE, CONNECT 메소드 추가)
     - 대칭키, 공개키 방식
     - 디지털 서명과 인증서
     - TCP/IP통신에 추가되는 과정
 
 
-- ch08. 실무 네트워크 지식
+- ch07. 실무 네트워크 지식
     -  SOAP, REST API (추가 API 패러다임)
     - 웹 서버 - How Web Server works?
         - 웹 서버, WAS의 역활과 동작과정
         - 커넥션 수락, 메시지 수신, 요청처리, 리소스 매핑/접근, 응답 만들기, 응답 보내기의 과정
 
--  ch09. 웹 캐시
+- ch08. 웹 캐시
     - 캐시 기본 동작
     - 검증 헤더와 조건부 요청
     - 프록시 캐시
     - 캐시 무효화
 
--  ch10. 프록시 서버
+-  ch9. 프록시 서버
     - 프록시를 쓰는 이유?
         - 프록시 요청 특징
     - 메시지 추적
